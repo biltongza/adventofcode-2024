@@ -18,9 +18,7 @@ static bool IsValidResult(Equation equation)
 {
     List<Func<long, long, long>> operations = [
         (a, b) => a + b,
-        (a, b) => a - b,
         (a, b) => a * b,
-        (a, b) => a / b,
     ];
     Stack<(long target, long[] terms)> stack = new();
     stack.Push((equation.Target, equation.Terms));
